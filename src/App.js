@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component, useState } from 'react';
 import './App.css';
 
 class App extends Component {
   render() {
-    let nome = 'A.J.';
+
+  const [nome, setNome] = useState('A.J.');
 
   function alterarNome() {
-    nome = 'Anderson Marzola';
+    setNome('Anderson Marzola');
   }
 
     return (
